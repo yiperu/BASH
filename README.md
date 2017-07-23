@@ -63,6 +63,50 @@ read nombre
 
 echo "Tu SO es $nombre"
 ```
+####Comentarios
+Estos se hacen anteponiendo `#` Ejemplo de plantilla informativa:
+
+```
+#!/bin/bash
+#Autor: Henry AT
+#Fecha: 23/07/2017
+#Descripcion: Variables locales y globales
+#Contacto: henry-at@gmai.com
+```
+####Variables Globales y locales
+
+#####Importante:
+Cuando escribes solo `echo`, esto significa un salto de linea.
+
+Es importante insertar sangrados (Tabs) en el programa.
+#####Importante:
+Despues de declarar una variable el signo igual debe ir pegado tanto a la variable como a su valor `variable=valor` sin espacios entre ellos
+
+####Leyendo variables
+
+file: variable2.sh
+
+```bash
+#!/bin/bash
+
+#Autor: Henry AT
+#Fecha: 23/07/2017
+#Descripcion: Variables locales y globales
+#Contacto: henry-at@gmai.com
+
+variable="Soy una variable Global"
+echo
+function miBash
+{
+  local variable="Soy una variables Local"
+  echo $variable
+}
+echo $variable
+echo
+miBash
+echo $variable
+```
+
 
 
 
