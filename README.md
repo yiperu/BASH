@@ -80,7 +80,8 @@ Cuando escribes solo `echo`, esto significa un salto de linea.
 
 Es importante insertar sangrados (Tabs) en el programa.
 #####Importante:
-Despues de declarar una variable el signo igual debe ir pegado tanto a la variable como a su valor `variable=valor` sin espacios entre ellos
+- Despues de declarar una variable el signo igual debe ir pegado tanto a la variable como a su valor `variable=valor` sin espacios entre ellos
+- Para los casos de las variables locales es muy importante usar la palabra reservada `local`
 
 ####Leyendo variables
 
