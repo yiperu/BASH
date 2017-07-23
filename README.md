@@ -40,6 +40,8 @@ Guardar con .sh, darle los permisos de ejecucion y ejecutarlo con `./primer-file
 
 Si la variable contiene una cadena, este va entre commillas `" o '` 
 
+####Usando variables
+
 file: variable.sh
 
 ```
@@ -49,5 +51,18 @@ nombre='Henry AT'
 
 echo "Mi nombre es $nombre"
 ```
+
+####Leyendo variables
+
+file: variable2.sh
+
+```
+#!/bin/bash
+echo "Cual es el nombre de tu SO?"
+read nombre
+
+echo "Tu SO es $nombre"
+```
+
 
 
