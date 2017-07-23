@@ -38,5 +38,16 @@ echo "What Up man"
 
 Guardar con .sh, darle los permisos de ejecucion y ejecutarlo con `./primer-file`
 
+Si la variable contiene una cadena, este va entre commillas `" o '` 
+
+file: variable.sh
+
+```
+#!/bin/bash
+
+nombre='Henry AT'
+
+echo "Mi nombre es $nombre"
+```
 
 
