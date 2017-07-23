@@ -27,7 +27,16 @@ Para crear un archivo puedo usar el comando `touch`
 touch texto1
 ```
 
+###Primer ejemplo de un programa
 
+file: primer-file
+
+```
+#!/bin/bash
+echo "What Up man"
+```
+
+Guardar con .sh, darle los permisos de ejecucion y ejecutarlo con `./primer-file`
 
 
 
