@@ -191,4 +191,39 @@ else
 fi
 ```
 
+### Menu
+
+💡 Para que cualquier archivo Bash que creamos se pueda ejecutar de cualquier lugar lo copiamos a la carpeta `/bin` Ojo con los permisos y este archivo no debe tener extension
+
+Ejemplo de Menu
+
+```
+#!/bin/bash
+
+echo "Ingrese una opcion"
+echo
+echo "1 Limpiar pantalla"
+echo "2 Mostrar la ruta actual"
+echo "3 Mostrar el historial de comandos"
+echo "4 salir de este programa"
+echo
+echo "Seleccionar una opcion:"
+read opcion
+
+case $opcion in
+
+1) clear;;
+2) pwd;;
+3) history;;
+4) exit;;
+*) echo "Opcion no Válidai"
+
+esac
+```
+Pasar a esta carpeta para que pueda ser ejecutado desde cualquier lado.
+
+`sudo cp menu.sh /bin/menu`
+
+
+
 
