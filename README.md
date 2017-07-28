@@ -1,4 +1,6 @@
-##BASH
+# BASH
+
+-
 
 ***Bash es interpretado***
 
@@ -27,7 +29,7 @@ Para crear un archivo puedo usar el comando `touch`
 touch texto1
 ```
 
-###Primer ejemplo de un programa
+### Primer ejemplo de un programa
 
 file: primer-file
 
@@ -40,7 +42,7 @@ Guardar con .sh, darle los permisos de ejecucion y ejecutarlo con `./primer-file
 
 Si la variable contiene una cadena, este va entre commillas `" o '` 
 
-####Usando variables
+#### Usando variables
 
 file: variable.sh
 
@@ -52,7 +54,7 @@ nombre='Henry AT'
 echo "Mi nombre es $nombre"
 ```
 
-####Leyendo variables
+#### Leyendo variables
 
 file: variable2.sh
 
@@ -63,7 +65,7 @@ read nombre
 
 echo "Tu SO es $nombre"
 ```
-####Comentarios
+#### Comentarios
 Estos se hacen anteponiendo `#` Ejemplo de plantilla informativa:
 
 ```
@@ -73,17 +75,17 @@ Estos se hacen anteponiendo `#` Ejemplo de plantilla informativa:
 #Descripcion: Variables locales y globales
 #Contacto: henry-at@gmai.com
 ```
-####Variables Globales y locales
+#### Variables Globales y locales
 
-#####Importante:
+##### Importante:
 Cuando escribes solo `echo`, esto significa un salto de linea.
 
 Es importante insertar sangrados (Tabs) en el programa.
-#####Importante:
+##### Importante:
 - Despues de declarar una variable el signo igual debe ir pegado tanto a la variable como a su valor `variable=valor` sin espacios entre ellos
 - Para los casos de las variables locales es muy importante usar la palabra reservada `local`
 
-####Leyendo variables
+#### Leyendo variables
 
 file: variable2.sh
 
@@ -108,7 +110,7 @@ miBash
 echo $variable
 ```
 
-####Ingresando cadena de texto
+#### Ingresando cadena de texto
 
 file: ingresar-texto.sh
 
@@ -150,5 +152,3 @@ echo -e "Tus herramientas favoritas de Pentesting son ${herramientas[0]},${herra
 
 
 
-
-# BASH
