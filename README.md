@@ -17,6 +17,8 @@ Para agregar permiso de ejecucion
 chmod +x <file>.sh
 ```
 
+💡 [La mejor explicacion de permisos chmod, 755, etc](https://askubuntu.com/questions/932713/what-is-the-difference-between-chmod-x-and-chmod-755/932974)
+
 Para ejecutar archivo
 
 ```
@@ -149,6 +151,25 @@ echo -e "Tus herramientas favoritas de Pentesting son ${herramientas[0]},${herra
 - Para leer varias palabras, se separa con espacios: `read variable1 variable2`
 - Se puede utilizar la variable por default de Bash `REPLY`
 - Se pueden leer como si fueran arreglos: `read -a variableArray` y este luego se imprime usando la siguiente notacion `${herramientas[2]}`
+
+### Condicionales
+
+En las condicionales, es muy importante los sangrados.
+Primer simple ejemplo if.sh:
+
+```
+#!/bin/bash
+
+echo "Ingresa tu edad:"
+read edad
+
+  if test $edad = 18;  then
+    echo "Eres mayor de edad"
+  else
+    echo "No sabemos si eres joven o anciano"
+  fi
+```
+
 
 
 
