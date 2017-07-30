@@ -398,6 +398,20 @@ system_profiler SPSoftwareDataType
 $ pwd; date; ls -las
 ```
 
+💡 Para borar un archivo `$ rm <file-name>`
+
+💡 Para instalar en Mac el wget y habilitar openressl for TLS (Transport Layer Security ) support (referido a SSL): 
+
+```
+$ brew install wget --with-libressl
+```
+
+💡 Para descargar sin mostrar los detalles podemos utilizar el comando 
+
+```
+$ wget facebook 2> /dev/null
+```
+
 ### Ejemplo de mostrar el usuario
 
 ```
@@ -411,10 +425,11 @@ echo $lineas
 echo "Bien venido al curso de scrip con BASH, "$usuario
 echo $lineas
 echo
+ping -c2 google.com
+echo
+echo "Ping completado"
+read -p "Presionar enter para continuar"
 ```
 
-
-
-
-
+[pipl page](https://pipl.com/)
 
