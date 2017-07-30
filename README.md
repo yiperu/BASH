@@ -243,8 +243,8 @@ esac
 | Diferentes | - | != |
 | Con longitud mayor que cero | - | -n |
 | Longitud igual a 0 o vacio | - | -z |
-| Lower equal | - | <= |
-| Greater than | - | >= |
+| Lower than | - | < |
+| Greater than | - | > |
 
 ### Operadores Con Ficheros
 
@@ -269,4 +269,8 @@ esac
 | Negacion | ! | - |
 | and | -a | - |
 | or | -o | - |
+
+
+💡 Tener en cuenta que la condicional que va dentro de los simbolos `[ ` y ` ]` deben tener un espacio en blanco entre estos: `[ $text1 != $text2 ]` .
+
 
