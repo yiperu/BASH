@@ -330,4 +330,48 @@ if [ $numero1 -gt $numero2 ]; then
 fi
 ```
 
+### Ejemplo Aritmetics Operations
+
+```
+#!/bin/bash
+
+# let es usado para expresiones matematicas, let es igual a poner (())
+let suma=3+5
+echo "3 + 5 = $suma"
+let resta=7-3
+echo "7 - 3 = " $resta
+let multiplicacion=5*3
+echo "5 x 3 = $multiplicacion"
+let division=12/4
+echo "12 / 4 = $division"
+let modulo=17%3
+echo "17 % 3 = " $modulo
+let potencia=4**2
+echo "4 a la 2 = $potencia"
+```
+
+### Some command for get information of System
+
+| Command | Descripcion |
+|------------- | ------------- |
+| top | show running processes, memory usage and similar stats |
+| iostat | show I/O per terminal, device and SPU summery statistics |
+| vm_stat | show Mach virtual memory statistics |
+| df and diskutil list | report on drive space used and free |
+| fs_usage | show file activity for both disk and network |
+| nettop | display updated information about the network (a bit like top for net I/O) |
+| w | display who is logged in, what they are doing and system load |
+| ifconfig and ipconfig | network interface and IP protocol details |
+| `top -l 1 -s 0 | grep PhysMem` | |
+| `top -l 1 -s 0 | grep PhysMem | sed 's/, /\n         /g'` | |
+| sw_vers -productVersion  | |
+| system_profiler SPSoftwareDataType | |
+| sw_vers -productVersion | |
+
+
+💡 Cada uno de estos tiene una serie de opciones: `$ man <command>` example: `$ man top`
+
+
+
+
 
