@@ -220,10 +220,53 @@ case $opcion in
 
 esac
 ```
-Pasar a esta carpeta para que pueda ser ejecutado desde cualquier lado.
+💡 Pasar a esta carpeta para que pueda ser ejecutado desde cualquier lado.
 
 `sudo cp menu.sh /bin/menu`
 
+### Operadores Numéricos
 
+| Descripcion | Comando | Significado |
+|------------- | ------------- | ------------- |
+| Equal | -eq | == |
+| Not Equal | -ne | != |
+| Lower than | -lt | < |
+| Greater than | -gt | > |
+| Lower equal | -le | <= |
+| Greater than | -ge | >= |
 
+### Operadores Con Cadenas
+
+| Descripcion | Comando | Significado |
+|------------- | ------------- | ------------- |
+| Equal | -| = |
+| Diferentes | - | != |
+| Con longitud mayor que cero | - | -n |
+| Longitud igual a 0 o vacio | - | -z |
+| Lower equal | - | <= |
+| Greater than | - | >= |
+
+### Operadores Con Ficheros
+
+| Descripcion | Comando | Significado |
+|------------- | ------------- | ------------- |
+| Es un directorio | -d | - |
+| Existe el fichero | -e | - |
+| Es un fichero ordinario | -f | - |
+| Es leíble | -r | - |
+| Es no vacio | -s | - |
+| Es escribible | -w | - |
+| Es Ejecutable | -x | - |
+| Eres el dueño del fichero | -O | - |
+| El grupo del fichero es igual al tuyo | -G | - |
+| Fichero 1 es mas reciente que fichero 2 | -nt | - |
+| Fichero 1 es mas antigu que fichero 2 | -ot | - |
+
+### Operadores Booleanos
+
+| Descripcion | Comando | Significado |
+|------------- | ------------- | ------------- |
+| Negacion | ! | - |
+| and | -a | - |
+| or | -o | - |
 
