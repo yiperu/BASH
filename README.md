@@ -372,6 +372,49 @@ echo "4 a la 2 = $potencia"
 💡 Cada uno de estos tiene una serie de opciones: `$ man <command>` example: `$ man top`
 
 
+### Ejemplo Info of System
+
+```
+#!/bin/bash
+
+echo "Informacion del sistema: "
+echo
+echo "Estado de la memoria"
+vm_stat
+echo
+echo "Uso del disco duro"
+df -h
+echo "Version de este sistema"
+system_profiler SPSoftwareDataType
+```
+
+💡 Para pasarse al modo root run el sigte comando: `$ sudo su`, pedira password
+
+💡 Para salir al usuario normal : `$ exit`
+
+💡 Para hacer que 2 o mas comandos se ejecuten unos seguido del otro, se usa el 'punto y coma' : `;`, example:
+
+```
+$ pwd; date; ls -las
+```
+
+### Ejemplo de mostrar el usuario
+
+```
+#!/bin/bash
+
+clear
+usuario=$(whoami)
+lineas="==========================="
+echo
+echo $lineas
+echo "Bien venido al curso de scrip con BASH, "$usuario
+echo $lineas
+echo
+```
+
+
+
 
 
 
